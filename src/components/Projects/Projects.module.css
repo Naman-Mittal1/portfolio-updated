@@ -1,0 +1,40 @@
+.container {
+    /*  background-color: var(--light-shade); */
+    padding: 0 5% 3% 5%;
+}
+
+.projectme{
+    margin: 7% 0 3% 10% !important; 
+}
+
+.container h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+  .projectme{
+    margin: 8% 0 3% 6% !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        /*  background-color: var(--light-shade); */
+        padding: 0;
+    }
+
+    .projectme h2{
+      font-size: 39px;
+    }
+
+    .projectme{
+      padding: 0 13px;
+      margin: 10% 2% 6% 2% !important;
+    }
+
+    .projectme p{
+      /* display: none; */
+      font-size: 20px;
+    }
+  }
