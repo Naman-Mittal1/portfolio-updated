@@ -126,6 +126,40 @@
   margin: 1.8rem auto;
 }
 
+.section-heading {
+  position: relative;
+}
+
+.section-heading-line {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #10748d;
+}
+
+.section-heading {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 4px;
+  width: 0;
+  background-color: #10748d;
+  transition: width 0.5s ease-in-out; 
+}
+
+.section-heading:hover::after {
+  width: 120px;
+}
+
 .single-case-study-description,
 .single-case-study-overview p,
 .single-case-study-features ul,
