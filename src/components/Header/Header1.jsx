@@ -1,9 +1,14 @@
 import React, {useState} from 'react'
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Header1 = () => {
     const [showContent, setShowContent] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setMenuOpen((prev) => !prev);
+    };
 
    const handleSkillsetClick = (event) => {
     event.preventDefault();
@@ -43,19 +48,21 @@ const Header1 = () => {
       setShowContent(true);
     }, 500);
   };
-  const location = useLocation();
-  const isActive = location.pathname !== "/";
+  // const location = useLocation();
+  // const isActive = location.pathname !== "/";
 
   return (
      <header className={`header ${showContent ? "transition" : ""}`}>
-        <Link to="/" className="logo" onClick={handleLogoClick}>
+        <Link to="/" className="logo logo-container" onClick={handleLogoClick}>
           Naman.
         </Link>
-        <div
-          className={`hamburger-menu ${isActive ? "active" : ""}`}
-          onClick={() => window.location.replace("/")}
-        ></div>
-        <nav className={`navbar ${isActive ? "show" : ""}`}>
+        <div className="hamburger-menu" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav className={`navbar ${menuOpen ? 'show' : ''}`}>
           <Link to="/" className="logo" onClick={handleLogoClick}>
             Home
           </Link>
