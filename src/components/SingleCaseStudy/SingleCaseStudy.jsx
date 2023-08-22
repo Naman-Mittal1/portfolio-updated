@@ -18,6 +18,7 @@ const SingleCaseStudy = ({ caseStudyData }) => {
   }
 
   const techs = selectedCaseStudy.techStack.split(', ');
+  const benifitsStyle = JSON.parse(selectedCaseStudy.benifitsStyle);
 
 
   return  (
@@ -45,7 +46,7 @@ const SingleCaseStudy = ({ caseStudyData }) => {
           
           <p>{selectedCaseStudy.overviewPara3}</p>
         </div>
-        <h2 className="section-heading">Key Features</h2>
+        <h2 className="section-heading">{selectedCaseStudy.featuresHeading}</h2>
         <div className="features-cards">
           <div className="features-card">
             <h3>{selectedCaseStudy.featuresPointHeading1}</h3>
@@ -73,8 +74,8 @@ const SingleCaseStudy = ({ caseStudyData }) => {
             <img src={selectedCaseStudy.image3} alt={selectedCaseStudy.img} />
           </div> */}
         <div className="single-case-study-benefits">
-          <h2 className="section-heading">Benefits</h2>
-          <div className="benefits-cards">
+          <h2 className="section-heading">{selectedCaseStudy.benifitsHeading}</h2>
+          <div className="benefits-cards" style={benifitsStyle}>
             <div className="benefit-card">
               <h3>{selectedCaseStudy.benifitsPointHeading1}</h3>
               <p>{selectedCaseStudy.benifitsPoint1}</p>
@@ -96,6 +97,11 @@ const SingleCaseStudy = ({ caseStudyData }) => {
               <p>{selectedCaseStudy.benifitsPoint5}</p>
             </div>
           </div>
+        </div>
+
+        <div className="single-case-study-conclusion">
+          <h2 className="section-heading">{selectedCaseStudy.resultHeading}</h2>
+          <p>{selectedCaseStudy.resultPara}</p>
         </div>
 
         <div className="single-case-study-conclusion">
