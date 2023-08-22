@@ -95,3 +95,23 @@
     color: #0077cc;
   }
   
+  .case-study-image {
+    width: 100%;
+  }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .case-studies-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1100px) {
+  .case-studies-list {
+    grid-template-columns: 1fr 1fr;
+  } 
+}
