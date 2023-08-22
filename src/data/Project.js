@@ -44,12 +44,5 @@ export const projects = [{
 //     github: "https://github.com/manishprivet/word-ladder",
 //     stack: ["TypeScript", "Svelte", "Vercel"],
 // },
-// {
-//     title: "Fab Fashion",
-//     content: `A sample E-commerce site project with an attractive UI, and features like shopping cart, google/email authentication and payment with stripe`,
-//     link: "https://fab.manishk.dev",
-//     image: "fab-fashion.webp",
-//     github: "https://github.com/manishprivet/fab-fashion",
-//     stack: ["TypeScript", "React", "Firebase"],
-// },
+
 ];

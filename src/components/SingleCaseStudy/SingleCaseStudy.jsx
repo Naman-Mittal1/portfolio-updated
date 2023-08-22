@@ -3,8 +3,11 @@ import { useParams } from 'react-router-dom';
 import './SingleCaseStudy.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import TechStack from '../TechStack/TechStack';
+
 
 const SingleCaseStudy = ({ caseStudyData }) => {
+
 
   const { slug } = useParams();
 
@@ -13,6 +16,9 @@ const SingleCaseStudy = ({ caseStudyData }) => {
   if (!selectedCaseStudy) {
     return <div>Case study not found</div>;
   }
+
+  const techs = selectedCaseStudy.techStack.split(', ');
+
 
   return  (
     <>
@@ -99,14 +105,16 @@ const SingleCaseStudy = ({ caseStudyData }) => {
 
 
           <h3>Tech Stack Used: </h3>
-          <p>{selectedCaseStudy.techStack}</p>    
+          <p></p>    
+          
+          <TechStack techs={techs} />
 
-          <h3>Team Members for this project: </h3>
+          <h3>{selectedCaseStudy.teamMember}</h3>
           <p>{selectedCaseStudy.teamMember1}</p>
           <p>{selectedCaseStudy.teamMember2}</p>
           <p>{selectedCaseStudy.teamMember3}</p>
 
-          <span>Want to explore more about this project? <a style={{textDecoration: 'none'}} href={selectedCaseStudy.exploreLink}>Click here</a></span>
+          <span >{selectedCaseStudy.lastInfo} <a style={{textDecoration: 'none'}} href={selectedCaseStudy.exploreLink}>Click here</a></span>
         </div>
 
         
