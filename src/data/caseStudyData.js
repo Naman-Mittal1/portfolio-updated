@@ -148,7 +148,7 @@ const caseStudyData = [
       "MERN Stack",
     ],
 
-    imageUrl: "/images/BizInsights.jpg",
+    imageUrl: "/images/BizInsightslogo.jpg",
 
     overviewPara1:
       "Small retail stores and street vendors often struggle with managing sales, inventory, expenses and cash flows efficiently due to lack of data and analytics. This leads to revenue losses from wastage, stock-outs, poor targeting and sub-optimal operations. BizInsights provides an intelligent retail assistant to solve these challenges through automated tracking and insights.",
