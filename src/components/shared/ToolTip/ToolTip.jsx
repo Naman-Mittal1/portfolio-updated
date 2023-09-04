@@ -9,9 +9,10 @@ const ToolTip = ({ id, tooltipContent, children }) => {
                 type='info'
                 effect='solid'
                 className='tooltip'
-                arrowColor='var(--button-color)'
+                arrowColor='#00abfe'
                 delayShow={500}
                 delayHide={500}
+                backgroundColor="#213065ba"
             >
                 {tooltipContent}
             </ReactTooltip>
