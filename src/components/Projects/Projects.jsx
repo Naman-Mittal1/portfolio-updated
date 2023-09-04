@@ -24,7 +24,7 @@ function Projects() {
           return (
             <ProjectCard
               {...project}
-              direction={dir_counter % 2 === 0 ? "row-reverse" : "row"}
+              direction={dir_counter % 2 === 0 ? "row" : "row-reverse"}
               key={dir_counter}
             />
           );

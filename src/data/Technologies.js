@@ -10,4 +10,5 @@ export const stacks = [
     "Python",
     "Git",
     "Github",
+    "Tailwind",
 ];

@@ -13,6 +13,7 @@ import {
     SiReact,
     SiRedux,
     SiSass,
+    SiTailwindcss,
 } from "react-icons/si";
 
 
@@ -31,5 +32,5 @@ export const Icons = {
     SiRedux,
     SiNetlify,
     SiFirebase,
-
+    SiTailwindcss,
 };

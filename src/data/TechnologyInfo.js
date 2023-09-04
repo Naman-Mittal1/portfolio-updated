@@ -8,6 +8,13 @@ export const Technologies = [{
         primaryColor: "var(--text-color)",
     },
     {
+        name: "Tailwind",
+        Icon: Icons.SiTailwindcss,
+        description: "Tailwind is an open-source CSS framework that provides ready-to-use utility classes to help developers rapidly build custom user interfaces without writing custom CSS.",
+        url: "https://jekyllrb.com/",
+        primaryColor: "var(--text-color)",
+    },
+    {
         name: "Bash",
         Icon: Icons.SiGnubash,
         description: "Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell",

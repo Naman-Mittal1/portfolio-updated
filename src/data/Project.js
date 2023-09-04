@@ -1,4 +1,12 @@
 export const projects = [{
+    title: "BookMates - Discover Together",
+    content: `Bookmates is a secure platform for users to explore, add, request and discuss books collaboratively, enabling meaningful connections through group interactions.`,
+    link: "https://bookmates.vercel.app/",
+    image: "BookMates.png",
+    stack: ["React", "NodeJS", "Mongo", "Tailwind", "Github"],
+    github: "https://github.com/Naman-Mittal1/BookClub",
+},
+{
     title: "Recipe Website",
     content: `A Recipe website with MERN tech stack including secure authentication and registration. Users can create recipes, save recipes, and delete recipes. `,
     link: "https://recipesite.onrender.com/",
