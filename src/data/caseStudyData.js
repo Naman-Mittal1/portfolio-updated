@@ -275,6 +275,7 @@ const caseStudyData = [
   //   },
 
   // Add more case study objects as needed
+  // a
 ];
 
 export default caseStudyData;
