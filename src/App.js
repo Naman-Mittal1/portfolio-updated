@@ -1,10 +1,12 @@
 import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import CaseStudyPage from './pages/CaseStudyPage'; // Import the new page component
 import Home from './pages/Home';
 import ReactGA from 'react-ga';
 import caseStudyData from './data/caseStudyData';
+import CaseStudyPage from './pages/CaseStudyPage';
 import SingleCaseStudy from './components/SingleCaseStudy/SingleCaseStudy';
+import InterviewPage from './pages/InterviewPage';
+import SingleInterview from './components/SingleInterview/SingleInterview';
 
 const App = () => {
 
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/case-studies" element={<CaseStudyPage />} /> 
         <Route path="/case-studies/:slug" element={<SingleCaseStudy caseStudyData={caseStudyData} />} />
+        <Route path="/interviews" element={<InterviewPage />} /> 
+        <Route path="/interviews/:slug" element={<SingleInterview/>} />
       </Routes>
     </Router>
   );
