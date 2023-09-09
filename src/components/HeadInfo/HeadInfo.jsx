@@ -104,6 +104,18 @@ const HeadInfo = () => {
       );
     },
 
+    placement: () => {
+      return (
+        <p style={{ marginTop: "10px" }}>
+          <span style={{ marginTop: "10px", color: "var(--text-color)" }}>
+            Hey, I am Naman Mittal! Here's my placement history {" "}
+            <br />
+            <br /> Interviewed at Atrium, Watchguard.. Now Interviewing at AppPerfect.
+          </span>
+        </p>
+      );
+    },
+
     naman: () => {
       return (
         <p style={{ marginTop: "10px" }}>
