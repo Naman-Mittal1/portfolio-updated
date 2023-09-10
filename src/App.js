@@ -7,6 +7,7 @@ import CaseStudyPage from './pages/CaseStudyPage';
 import SingleCaseStudy from './components/SingleCaseStudy/SingleCaseStudy';
 import InterviewPage from './pages/InterviewPage';
 import SingleInterview from './components/SingleInterview/SingleInterview';
+import Placement from './components/Placement/Placement';
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/placement" element={<Placement />} />
         <Route path="/case-studies" element={<CaseStudyPage />} /> 
         <Route path="/case-studies/:slug" element={<SingleCaseStudy caseStudyData={caseStudyData} />} />
         <Route path="/interviews" element={<InterviewPage />} /> 
