@@ -19,7 +19,7 @@ const PlacementTimeLine = () => {
       </h2>
     </div>
     
-    <VerticalTimeline>
+    <VerticalTimeline   >
 
      <VerticalTimelineElement
         className="vertical-timeline-element--work"
