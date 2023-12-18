@@ -10,7 +10,7 @@ import {
 import { ReactTerminal } from "react-terminal";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import Resume from "../../assets/Resume.pdf";
+import Resume from "../../assets/Naman_Mittal_Resume.pdf";
 import "./HeadInfo.css";
 
 const HeadInfo = () => {
